@@ -13,6 +13,8 @@ An illustrated, growing encyclopedia of how a website works, from the DNS lookup
 3. **One head, three audiences**: an example `<head>` linked line by line to the search result, the social card and the AI answer it produces.
 4. **Encyclopedia**: 64 terms, each with a plain-English definition, how it works, a real snippet and related terms. It's searchable and filterable, and every entry can be deep-linked (`#canonical`).
 
+**Simple version** ([/basics](https://webanatomy.vercel.app/basics)): the website explained as a restaurant, what happens when you visit, how Google and AI find you, and a history of the web from 1969 to AI search.
+
 ## Run it
 
 No build step. Open `index.html`, or serve the folder:

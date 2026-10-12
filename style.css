@@ -231,3 +231,80 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -.02em; margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ── basics page ───────────────────────────────────── */
+.analogy { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.ana {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  border-top: 4px solid var(--c); padding: 16px;
+}
+.ana-k { font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); }
+.ana h3 { font-size: 18px; margin: 6px 0 6px; }
+.ana h3 code { font-size: 13px; font-weight: 500; color: var(--ink-3); margin-left: 4px; }
+.ana p { margin: 0; color: var(--ink-2); font-size: 15px; }
+
+.flow { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; counter-reset: f; }
+@media (min-width: 900px) { .flow { grid-template-columns: repeat(5, 1fr); } }
+.flow li {
+  counter-increment: f; position: relative; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; padding: 16px; display: grid; gap: 4px;
+}
+.flow li::before { content: counter(f); font: 600 12px var(--mono); color: var(--accent); }
+.flow b { font-size: 16px; }
+.flow span { color: var(--ink-2); font-size: 14px; }
+@media (min-width: 900px) {
+  .flow li:not(:last-child)::after {
+    content: "→"; position: absolute; right: -10px; top: 50%; transform: translate(50%, -50%);
+    color: var(--ink-3); background: var(--paper); line-height: 1; padding: 2px 0; z-index: 1;
+  }
+}
+@media (max-width: 899px) {
+  .flow li:not(:last-child)::after {
+    content: "↓"; position: absolute; left: 50%; bottom: -10px; transform: translate(-50%, 50%);
+    color: var(--ink-3); background: var(--paper); padding: 0 6px; z-index: 1;
+  }
+}
+
+.found { display: grid; gap: 10px; }
+@media (min-width: 720px) { .found { grid-template-columns: 1fr 1fr; } }
+.found-step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.found-step span {
+  flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--l-seo); color: #fff; font-weight: 700; font-size: 14px;
+}
+.found-step p { margin: 0; color: var(--ink-2); }
+.found-step b { color: var(--ink); }
+#found .thesis { margin-top: 20px; }
+
+.timeline { list-style: none; padding: 0; margin: 0; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 63px; top: 0; bottom: 0; width: 2px; background: var(--line); }
+.timeline .era { position: relative; margin: 28px 0 12px; padding-left: 88px; }
+.timeline .era:first-child { margin-top: 0; }
+.timeline .era::before {
+  content: ""; position: absolute; left: 56px; top: 6px; width: 16px; height: 16px; border-radius: 4px; background: var(--c);
+}
+.timeline .era h3 { font-size: 20px; }
+.timeline .era p { margin: 2px 0 0; color: var(--ink-3); font-size: 14px; }
+.ev { display: grid; grid-template-columns: 48px 1fr; gap: 40px; padding: 10px 0; position: relative; }
+.ev::before {
+  content: ""; position: absolute; left: 59px; top: 18px; width: 10px; height: 10px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--ink-3);
+}
+.ev.now::before { background: var(--accent); border-color: var(--accent); }
+.ev time { font: 600 14px var(--mono); color: var(--ink-2); text-align: right; padding-top: 2px; }
+.ev b { font-size: 16px; }
+.ev p { margin: 4px 0 6px; color: var(--ink-2); max-width: 68ch; }
+.tag {
+  display: inline-block; font: 500 12px var(--mono); color: var(--ink-2); text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; margin: 2px 4px 0 0;
+}
+.tag::before { content: "↗ "; color: var(--ink-3); }
+.tag:hover { color: var(--ink); border-color: var(--ink-3); }
+@media (max-width: 560px) {
+  .timeline::before { left: 7px; }
+  .timeline .era { padding-left: 32px; }
+  .timeline .era::before { left: 0; }
+  .ev { grid-template-columns: 1fr; gap: 2px; padding-left: 32px; }
+  .ev::before { left: 3px; top: 15px; }
+  .ev time { text-align: left; }
+}

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Websites, Explained Simply · Anatomy of a Website</title>
+  <meta name="description" content="What a website is, explained with a restaurant: names, kitchens, menus and guidebooks. Plus a short history of the web from 1969 to AI search.">
+  <meta property="og:title" content="Websites, Explained Simply">
+  <meta property="og:description" content="A website explained as a restaurant, plus the history of the web from 1969 to AI search.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/basics">
+  <link rel="canonical" href="https://webanatomy.vercel.app/basics">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Websites, Explained Simply",
+    "description": "A website explained as a restaurant, plus a short history of the web.",
+    "url": "https://webanatomy.vercel.app/basics",
+    "isPartOf": { "@type": "WebSite", "name": "Anatomy of a Website", "url": "https://webanatomy.vercel.app/" },
+    "author": { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim-portfolio.vercel.app/" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="#restaurant">The idea</a>
+        <a href="#visit">A visit</a>
+        <a href="#found">Getting found</a>
+        <a href="#history">History</a>
+        <a href="/">Full version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow">The simple version</p>
+      <h1>Websites, Explained Simply</h1>
+      <p class="lede">No jargon needed. A website works a lot like a restaurant. Once you see the restaurant, you understand the website.</p>
+      <p class="thesis"><strong>One sentence:</strong> a website is a set of files on a computer somewhere. When you type its name, your browser finds that computer, asks for the files and turns them into the page you see.</p>
+    </section>
+
+    <!-- 1 · Restaurant -->
+    <section id="restaurant" class="block wrap" aria-labelledby="r-h">
+      <div class="block-head">
+        <span class="num">01</span>
+        <div>
+          <h2 id="r-h">A website is a restaurant</h2>
+          <p>Every part of a website has a match in a restaurant. The small label is the restaurant version, and the bold name is what builders call it.</p>
+        </div>
+      </div>
+
+      <div class="analogy">
+        <article class="ana" style="--c:var(--l-network)">
+          <span class="ana-k">The restaurant's name</span>
+          <h3>Domain name <code>example.com</code></h3>
+          <p>What people type to find you. You rent it for about $10–15 a year.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-network)">
+          <span class="ana-k">The maps app</span>
+          <h3>DNS</h3>
+          <p>Turns the name into an exact address so your browser knows where to go.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-hosting)">
+          <span class="ana-k">The building</span>
+          <h3>Hosting / server</h3>
+          <p>The computer, always switched on, where your website's files live.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-hosting)">
+          <span class="ana-k">Branches in every city</span>
+          <h3>CDN</h3>
+          <p>Copies of your site around the world, so everyone is served from somewhere close.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-html)">
+          <span class="ana-k">The menu's words</span>
+          <h3>HTML</h3>
+          <p>What's on the page: headings, paragraphs, pictures, links. The content itself.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-css)">
+          <span class="ana-k">The decor and plating</span>
+          <h3>CSS</h3>
+          <p>How it looks: colors, fonts, spacing, and how it rearranges on a phone.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-js)">
+          <span class="ana-k">The waiter</span>
+          <h3>JavaScript</h3>
+          <p>Reacts to you: opens menus, checks forms, loads more without reloading the page.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-backend)">
+          <span class="ana-k">The kitchen and pantry</span>
+          <h3>Backend & database</h3>
+          <p>Where orders are handled and records are kept: accounts, messages, purchases. Simple sites don't need one.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-quality)">
+          <span class="ana-k">The sealed delivery bag</span>
+          <h3>HTTPS <code>🔒</code></h3>
+          <p>Nobody can read or tamper with what travels between you and the site. Free and automatic on most hosts today.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-seo)">
+          <span class="ana-k">The guidebook listing</span>
+          <h3>SEO</h3>
+          <p>Getting listed well in Google, with a clear name and a short description, so people pick you.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-seo)">
+          <span class="ana-k">A friend's recommendation</span>
+          <h3>GEO</h3>
+          <p>When people ask ChatGPT or Claude, the AI recommends places it has read about. It can only repeat what your site says clearly.</p>
+        </article>
+        <article class="ana" style="--c:var(--l-workflow)">
+          <span class="ana-k">The renovation plans</span>
+          <h3>GitHub</h3>
+          <p>A saved history of every change, so you can always undo. Pushing a change there can update the live site automatically.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 · Visit -->
+    <section id="visit" class="block wrap" aria-labelledby="v-h">
+      <div class="block-head">
+        <span class="num">02</span>
+        <div>
+          <h2 id="v-h">What happens when you visit</h2>
+          <p>All of this takes about a second.</p>
+        </div>
+      </div>
+      <ol class="flow">
+        <li><b>You type the name</b><span>example.com</span></li>
+        <li><b>Look up the address</b><span>DNS finds which computer has the site</span></li>
+        <li><b>Ask for the page</b><span>Over a locked, private connection</span></li>
+        <li><b>Get the files back</b><span>HTML, CSS, JavaScript, pictures</span></li>
+        <li><b>Draw the page</b><span>The browser puts it all together on your screen</span></li>
+      </ol>
+      <p class="note">Want the detailed version? See the <a href="/#journey">animated journey</a>, which shows every step.</p>
+    </section>
+
+    <!-- 3 · Getting found -->
+    <section id="found" class="block wrap" aria-labelledby="f-h">
+      <div class="block-head">
+        <span class="num">03</span>
+        <div>
+          <h2 id="f-h">How Google and AI find you</h2>
+          <p>Before most people find your website, a robot has already read it.</p>
+        </div>
+      </div>
+      <div class="found">
+        <div class="found-step"><span>1</span><p><b>Robots visit.</b> Google's robot, and now AI robots, regularly read websites the way you would, only much faster.</p></div>
+        <div class="found-step"><span>2</span><p><b>They read the labels.</b> Every page has hidden labels: a title, a one-line description and facts like "this is a person, this is their job". Visitors never see them, but robots read them first.</p></div>
+        <div class="found-step"><span>3</span><p><b>They decide who to show.</b> Clear pages that load fast, work on phones and that other sites link to get shown first.</p></div>
+        <div class="found-step"><span>4</span><p><b>AI repeats what it read.</b> When someone asks an AI assistant about you, it answers from what it found. If your site is vague, the answer is vague too.</p></div>
+      </div>
+      <p class="thesis"><strong>The takeaway:</strong> SEO and GEO aren't tricks you add later. They start with a website that is clear, fast and honest about what it is.</p>
+    </section>
+
+    <!-- 4 · History -->
+    <section id="history" class="block wrap" aria-labelledby="h-h">
+      <div class="block-head">
+        <span class="num">04</span>
+        <div>
+          <h2 id="h-h">A short history of the web</h2>
+          <p>From a two-letter message between universities to AI that answers questions for you. Each step added one of the pieces above.</p>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li class="era" style="--c:var(--l-network)"><h3>The roads get built</h3><p>1969–1988 · Before the web, there was the internet: computers learning to talk to each other.</p></li>
+        <li class="ev"><time>1969</time><div><b>ARPANET sends its first message</b><p>UCLA tries to send "LOGIN" to Stanford Research Institute. The system crashes after "LO". The internet's first word is an accident.</p></div></li>
+        <li class="ev"><time>1974</time><div><b>TCP/IP is designed</b><p>Vint Cerf and Bob Kahn describe a common language that lets any network connect to any other. ARPANET switches to it on January 1, 1983, often called the internet's birthday.</p></div></li>
+        <li class="ev"><time>1983</time><div><b>DNS: names instead of numbers</b><p>Paul Mockapetris designs the Domain Name System, so people can remember names instead of numbers. In 1985, symbolics.com becomes the first .com.</p><a class="tag" href="/#dns">DNS</a></div></li>
+
+        <li class="era" style="--c:var(--l-html)"><h3>The web is born</h3><p>1989–1994 · Pages you can link together and anyone can read.</p></li>
+        <li class="ev"><time>1989</time><div><b>Tim Berners-Lee proposes the World Wide Web</b><p>At CERN, the physics lab in Switzerland, he proposes linked documents researchers can share. His boss writes "vague but exciting" on the proposal.</p></div></li>
+        <li class="ev"><time>1990</time><div><b>The first website</b><p>Berners-Lee builds the first browser, the first server, HTML and HTTP. info.cern.ch, a page explaining the web itself, goes live. You can still visit it.</p><a class="tag" href="/#html-document">HTML</a> <a class="tag" href="/#http">HTTP</a></div></li>
+        <li class="ev"><time>1993</time><div><b>The web becomes free, and gets pictures</b><p>CERN releases the web to the public domain, free for anyone forever. The Mosaic browser shows images inside pages, and the web starts to look like magazines rather than manuals.</p></div></li>
+        <li class="ev"><time>1994</time><div><b>Netscape, cookies and robots.txt</b><p>Netscape Navigator brings the web to millions. Cookies let sites remember you. robots.txt lets sites tell crawlers where not to go. The W3C forms to set web standards.</p><a class="tag" href="/#robots-txt">robots.txt</a></div></li>
+
+        <li class="era" style="--c:var(--l-js)"><h3>Style, scripts and search</h3><p>1995–2003 · The web learns to look good, react, and be searched.</p></li>
+        <li class="ev"><time>1995</time><div><b>JavaScript, built in 10 days</b><p>Brendan Eich writes the first version of JavaScript at Netscape in about ten days. Encryption (SSL, later TLS) arrives the same year, making online shopping possible, and Amazon and eBay launch.</p><a class="tag" href="/#javascript">JavaScript</a> <a class="tag" href="/#https-tls">HTTPS</a></div></li>
+        <li class="ev"><time>1996</time><div><b>CSS separates looks from content</b><p>CSS becomes a standard, so design can live in its own file instead of being tangled into every page.</p><a class="tag" href="/#css">CSS</a></div></li>
+        <li class="ev"><time>1998</time><div><b>Google, and links as votes</b><p>Google ranks pages by how many other pages link to them (PageRank). Search engine optimization, SEO, becomes a profession.</p><a class="tag" href="/#backlinks">Backlinks</a></div></li>
+        <li class="ev"><time>1999</time><div><b>The first big CDN</b><p>Akamai starts copying websites to servers around the world so they load fast everywhere.</p><a class="tag" href="/#cdn">CDN</a></div></li>
+
+        <li class="era" style="--c:var(--l-hosting)"><h3>Apps and the cloud</h3><p>2004–2009 · Websites start behaving like software.</p></li>
+        <li class="ev"><time>2004</time><div><b>"Web 2.0" and Gmail</b><p>Gmail and, in 2005, Google Maps update without reloading the whole page. People start creating content, not only reading it.</p><a class="tag" href="/#fetch">fetch()</a></div></li>
+        <li class="ev"><time>2006</time><div><b>The cloud and sitemaps</b><p>Amazon Web Services rents out servers by the hour, so you no longer need to own one. Google, Yahoo and Microsoft agree on one sitemap format.</p><a class="tag" href="/#sitemap">Sitemap</a></div></li>
+        <li class="ev"><time>2007</time><div><b>The iPhone</b><p>The full web fits in a pocket, and sites now have to work on small touch screens.</p></div></li>
+        <li class="ev"><time>2009</time><div><b>The canonical tag</b><p>Search engines introduce rel=canonical, so a page reachable at several addresses can name one official URL.</p><a class="tag" href="/#canonical">Canonical</a></div></li>
+
+        <li class="era" style="--c:var(--l-seo)"><h3>Mobile, social and secure</h3><p>2010–2019 · Phones take over, and machines learn to read pages better.</p></li>
+        <li class="ev"><time>2010</time><div><b>Responsive design and Open Graph</b><p>Ethan Marcotte coins "responsive web design": one site that reshapes itself for every screen. Facebook's Open Graph tags control how shared links look.</p><a class="tag" href="/#responsive">Responsive</a> <a class="tag" href="/#open-graph">Open Graph</a></div></li>
+        <li class="ev"><time>2011</time><div><b>schema.org</b><p>Google, Bing and Yahoo agree on one vocabulary for facts in a page ("this is a person", "this is a recipe"). Today it's the structured data that AI also reads.</p><a class="tag" href="/#structured-data">Structured data</a></div></li>
+        <li class="ev"><time>2013</time><div><b>React</b><p>Facebook releases React, and building big interactive apps in the browser becomes mainstream.</p><a class="tag" href="/#framework">Framework</a></div></li>
+        <li class="ev"><time>2015</time><div><b>Free padlocks for everyone</b><p>Let's Encrypt gives out free HTTPS certificates, and HTTP/2 speeds up loading. Google starts favoring mobile-friendly pages.</p><a class="tag" href="/#https-tls">HTTPS</a></div></li>
+        <li class="ev"><time>2018</time><div><b>"Not secure"</b><p>Chrome labels every site without HTTPS "Not secure". Google begins indexing the mobile version of sites first.</p></div></li>
+
+        <li class="era" style="--c:var(--l-quality)"><h3>Speed and AI</h3><p>2020–today · Search stops being a list of links and starts answering.</p></li>
+        <li class="ev"><time>2020</time><div><b>Core Web Vitals</b><p>Google defines what "feels fast" means, in three measurements, and starts using them for ranking in 2021.</p><a class="tag" href="/#core-web-vitals">Core Web Vitals</a></div></li>
+        <li class="ev"><time>2022</time><div><b>ChatGPT</b><p>People start asking AI instead of searching. HTTP/3 also becomes a standard the same year.</p></div></li>
+        <li class="ev"><time>2023</time><div><b>"GEO" gets a name</b><p>Researchers publish a paper on Generative Engine Optimization: how to get content cited in AI-written answers.</p><a class="tag" href="/#geo">GEO</a></div></li>
+        <li class="ev"><time>2024</time><div><b>AI Overviews and llms.txt</b><p>Google puts AI-written summaries above its search results. llms.txt is proposed as a plain summary of a site written for language models.</p><a class="tag" href="/#llms-txt">llms.txt</a></div></li>
+        <li class="ev now"><time>Now</time><div><b>Back to the foundations</b><p>Robots now read your site on behalf of people. What they reward is what the web has always rewarded: clear content, honest labels, fast pages and links from others.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="block wrap">
+      <p class="thesis">Ready for more detail? The <a href="/">full Anatomy of a Website</a> has the animated request journey, the layer stack and 64 encyclopedia entries.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>
