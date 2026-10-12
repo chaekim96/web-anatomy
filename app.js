@@ -172,14 +172,17 @@
   function setFilter(f) { filter = f; apply(); }
   q.addEventListener("input", apply);
 
-  function openTerm(id) {
+  function openTerm(id, behavior = "smooth") {
     const c = document.getElementById(id);
     if (!c) return;
     if (c.hidden) { q.value = ""; filter = "all"; apply(); }
     c.open = true;
-    c.scrollIntoView({ block: "start" });
+    c.scrollIntoView({ block: "start", behavior });
     c.classList.remove("flash"); void c.offsetWidth; c.classList.add("flash");
   }
   apply();
-  if (location.hash && byId[location.hash.slice(1)]) openTerm(location.hash.slice(1));
+  // Wait for the browser's own hash jump, then open and scroll to the entry.
+  if (location.hash && byId[location.hash.slice(1)]) {
+    addEventListener("load", () => setTimeout(() => openTerm(location.hash.slice(1), "instant"), 50), { once: true });
+  }
 })();
