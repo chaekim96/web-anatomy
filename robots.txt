@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://web-anatomy-nine.vercel.app/sitemap.xml
+Sitemap: https://webanatomy.vercel.app/sitemap.xml

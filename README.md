@@ -1,6 +1,6 @@
 # Anatomy of a Website
 
-**Live:** https://web-anatomy-nine.vercel.app
+**Live:** https://webanatomy.vercel.app
 
 An illustrated, growing encyclopedia of how a website works, from the DNS lookup to the pixels, and from the `<head>` tag to search results and AI answers.
 
