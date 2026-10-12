@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anatomy of a Website · How the web works, visualized</title>
+  <meta name="description" content="An illustrated encyclopedia of a website: follow a request from DNS to pixels, see how one <head> becomes a search result, a social card and an AI answer, and look up 60+ terms.">
+  <meta property="og:title" content="Anatomy of a Website">
+  <meta property="og:description" content="How the web works, visualized: from DNS to pixels to search results and AI answers.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Anatomy of a Website",
+    "description": "An illustrated encyclopedia of how websites work, from DNS to SEO and GEO.",
+    "author": { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim-portfolio.vercel.app/" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#encyclopedia">Skip to the encyclopedia</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="#">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="#journey">Journey</a>
+        <a href="#layers">Layers</a>
+        <a href="#head-anatomy">The head</a>
+        <a href="#encyclopedia">Encyclopedia</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">An illustrated encyclopedia</p>
+      <h1>Anatomy of a Website</h1>
+      <p class="lede">Every search result, link preview and AI answer about a site comes from the same place: the website itself. This page takes a site apart layer by layer, from the DNS lookup to the pixels and from the <code>&lt;head&gt;</code> tag to Google and ChatGPT.</p>
+      <p class="thesis"><strong>SEO and GEO start with the website.</strong> If the foundation is weak, no keyword strategy or AI optimization can fix it.</p>
+    </section>
+
+    <!-- 1 · Journey -->
+    <section id="journey" class="block wrap" aria-labelledby="journey-h">
+      <div class="block-head">
+        <span class="num">01</span>
+        <div>
+          <h2 id="journey-h">The journey of a request</h2>
+          <p>What happens in the second or so between pressing Enter and seeing a page. Step through it, or press play.</p>
+        </div>
+      </div>
+
+      <div class="journey">
+        <div class="diagram-frame">
+          <svg id="journey-svg" role="img" aria-labelledby="journey-svg-title">
+            <title id="journey-svg-title">Diagram of a browser, DNS resolver, CDN edge, origin server, database and crawler, with the request path highlighted for the current step</title>
+          </svg>
+        </div>
+        <div class="journey-panel">
+          <div class="controls">
+            <button id="j-prev" class="btn" aria-label="Previous step">←</button>
+            <button id="j-play" class="btn btn-primary" aria-label="Play">▶ Play</button>
+            <button id="j-next" class="btn" aria-label="Next step">→</button>
+            <span id="j-count" class="count" aria-live="polite"></span>
+          </div>
+          <h3 id="j-title"></h3>
+          <p id="j-text"></p>
+          <div id="j-terms" class="chips"></div>
+          <ol id="j-steps" class="steps" aria-label="All steps"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Layers -->
+    <section id="layers" class="block wrap" aria-labelledby="layers-h">
+      <div class="block-head">
+        <span class="num">02</span>
+        <div>
+          <h2 id="layers-h">The layers</h2>
+          <p>A website is a stack. Visitors see only the middle of it. Machines read the top and bottom too. Click a layer to open its entries.</p>
+        </div>
+      </div>
+      <div id="layer-stack" class="stack"></div>
+    </section>
+
+    <!-- 3 · Head anatomy -->
+    <section id="head-anatomy" class="block wrap" aria-labelledby="head-h">
+      <div class="block-head">
+        <span class="num">03</span>
+        <div>
+          <h2 id="head-h">One head, three audiences</h2>
+          <p>Visitors never see the <code>&lt;head&gt;</code>, but Google, LinkedIn and AI assistants all read it. Hover or tap a line to see where it shows up.</p>
+        </div>
+      </div>
+
+      <div class="anatomy">
+        <pre class="code head-code" aria-label="Example HTML head"><code><span class="tag">&lt;head&gt;</span>
+  <span class="ln" data-k="title" tabindex="0"><span class="tag">&lt;title&gt;</span>Ada Park · Product designer in Seattle<span class="tag">&lt;/title&gt;</span></span>
+  <span class="ln" data-k="desc" tabindex="0"><span class="tag">&lt;meta</span> <span class="at">name</span>=<span class="st">"description"</span>
+        <span class="at">content</span>=<span class="st">"Product designer turning messy workflows
+        into calm tools. Case studies from fintech and health."</span><span class="tag">&gt;</span></span>
+  <span class="ln" data-k="canon" tabindex="0"><span class="tag">&lt;link</span> <span class="at">rel</span>=<span class="st">"canonical"</span> <span class="at">href</span>=<span class="st">"https://ada.example/"</span><span class="tag">&gt;</span></span>
+  <span class="ln" data-k="icon" tabindex="0"><span class="tag">&lt;link</span> <span class="at">rel</span>=<span class="st">"icon"</span> <span class="at">href</span>=<span class="st">"/favicon.svg"</span><span class="tag">&gt;</span></span>
+  <span class="ln" data-k="og" tabindex="0"><span class="tag">&lt;meta</span> <span class="at">property</span>=<span class="st">"og:image"</span>
+        <span class="at">content</span>=<span class="st">"https://ada.example/og.png"</span><span class="tag">&gt;</span></span>
+  <span class="ln" data-k="ld" tabindex="0"><span class="tag">&lt;script</span> <span class="at">type</span>=<span class="st">"application/ld+json"</span><span class="tag">&gt;</span>
+  { "@type": "Person", "name": "Ada Park",
+    "jobTitle": "Product designer",
+    "address": "Seattle, WA",
+    "sameAs": ["linkedin.com/in/adapark"] }
+  <span class="tag">&lt;/script&gt;</span></span>
+<span class="tag">&lt;/head&gt;</span></code></pre>
+
+        <div class="surfaces">
+          <figure class="surface">
+            <figcaption>Search result</figcaption>
+            <div class="serp">
+              <div class="serp-site"><span class="fav" data-k="icon">A</span><span><b>Ada Park</b><small data-k="canon">https://ada.example</small></span></div>
+              <div class="serp-title" data-k="title">Ada Park · Product designer in Seattle</div>
+              <div class="serp-desc" data-k="desc">Product designer turning messy workflows into calm tools. Case studies from fintech and health.</div>
+            </div>
+          </figure>
+          <figure class="surface">
+            <figcaption>Shared link</figcaption>
+            <div class="card-prev">
+              <div class="card-img" data-k="og"><span>og:image</span><b>Ada Park</b></div>
+              <div class="card-body">
+                <small data-k="canon">ada.example</small>
+                <div data-k="title">Ada Park · Product designer in Seattle</div>
+              </div>
+            </div>
+          </figure>
+          <figure class="surface">
+            <figcaption>AI answer</figcaption>
+            <div class="ai">
+              <p class="ai-q">Who is Ada Park?</p>
+              <p class="ai-a"><span data-k="ld">Ada Park is a product designer based in Seattle</span> <span data-k="desc">who redesigns complex workflows, with case studies in fintech and health</span>. <span class="cite" data-k="canon">ada.example</span></p>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <p class="note">An AI assistant writes its answer in its own words, but the facts it draws on come from the page's structured data, its text, and other sites that agree with them.</p>
+    </section>
+
+    <!-- 4 · Encyclopedia -->
+    <section id="encyclopedia" class="block wrap" aria-labelledby="enc-h">
+      <div class="block-head">
+        <span class="num">04</span>
+        <div>
+          <h2 id="enc-h">Encyclopedia</h2>
+          <p><span id="term-total"></span> terms, each with a plain-English definition, how it works and a real snippet.</p>
+        </div>
+      </div>
+
+      <div class="enc-tools">
+        <label class="search">
+          <span class="sr">Search terms</span>
+          <input id="q" type="search" placeholder="Search: DNS, canonical, caching…" autocomplete="off">
+        </label>
+        <div id="filters" class="chips" role="group" aria-label="Filter by layer"></div>
+      </div>
+      <p id="enc-empty" class="empty" hidden>Nothing matches. Try a shorter word.</p>
+      <div id="terms" class="terms"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
