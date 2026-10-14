@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API: A defined way for one program to ask another for data or actions · Anatomy of a Website</title>
+  <meta name="description" content="A defined way for one program to ask another for data or actions. On the web this is usually HTTP endpoints that return JSON, such as GET /api/projects or POST /api/contact. The frontend calls the API, the API talks to the database and other services, and secrets stay on the…">
+  <meta property="og:title" content="API: A defined way for one program to ask another for data or actions · Anatomy of a Website">
+  <meta property="og:description" content="A defined way for one program to ask another for data or actions. On the web this is usually HTTP endpoints that return JSON, such as GET /api/projects or POST /api/contact. The frontend calls the API, the API talks to the database and other services, and secrets stay on the…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/api">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/api">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "API",
+    "description": "A defined way for one program to ask another for data or actions.",
+    "url": "https://webanatomy.vercel.app/terms/api",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-backend)">Backend</span></p>
+    <h1>API</h1>
+    <p class="lede">A defined way for one program to ask another for data or actions.</p>
+    <div class="tp-body" style="--c:var(--l-backend)">
+      <p>On the web this is usually HTTP endpoints that return JSON, such as GET /api/projects or POST /api/contact. The frontend calls the API, the API talks to the database and other services, and secrets stay on the server.</p>
+      <pre class="code"><code>const res = await fetch('/api/projects');
+const projects = await res.json();</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/fetch"><span class="dot" style="background:var(--l-js)"></span>fetch()</a> <a class="chip" href="/terms/database"><span class="dot" style="background:var(--l-backend)"></span>Database</a> <a class="chip" href="/terms/serverless"><span class="dot" style="background:var(--l-hosting)"></span>Serverless function</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 6: Database query.</b> Dynamic pages often need data such as a user's projects or the latest posts, so the function queries a database and puts the results into HTML or JSON. Static sites skip this step entirely.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in Backend</h2>
+    <p class="tp-layer">Code and data that run on a server instead of in the visitor's browser.</p>
+    <div class="chips"><a class="chip" href="/terms/database"><span class="dot" style="background:var(--l-backend)"></span>Database</a> <a class="chip" href="/terms/auth"><span class="dot" style="background:var(--l-backend)"></span>Authentication</a> <a class="chip" href="/terms/environment-variables"><span class="dot" style="background:var(--l-backend)"></span>Environment variables &amp; secrets</a> <a class="chip" href="/terms/third-party"><span class="dot" style="background:var(--l-backend)"></span>Third-party services</a> <a class="chip" href="/terms/webhook"><span class="dot" style="background:var(--l-backend)"></span>Webhook</a></div>
+    <p class="tp-back"><a href="/#api">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic site: Pages assembled on request, often from a database · Anatomy of a Website</title>
+  <meta name="description" content="Pages assembled on request, often from a database. Dashboards, feeds, shops and anything behind a login need a page built for that request. That needs server code and usually a database, which adds cost, latency and security…">
+  <meta property="og:title" content="Dynamic site: Pages assembled on request, often from a database · Anatomy of a Website">
+  <meta property="og:description" content="Pages assembled on request, often from a database. Dashboards, feeds, shops and anything behind a login need a page built for that request. That needs server code and usually a database, which adds cost, latency and security…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/dynamic-site">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/dynamic-site">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Dynamic site",
+    "description": "Pages assembled on request, often from a database.",
+    "url": "https://webanatomy.vercel.app/terms/dynamic-site",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-hosting)">Hosting &amp; delivery</span></p>
+    <h1>Dynamic site</h1>
+    <p class="lede">Pages assembled on request, often from a database.</p>
+    <div class="tp-body" style="--c:var(--l-hosting)">
+      <p>Dashboards, feeds, shops and anything behind a login need a page built for that request. That needs server code and usually a database, which adds cost, latency and security work.</p>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/static-site"><span class="dot" style="background:var(--l-hosting)"></span>Static site</a> <a class="chip" href="/terms/database"><span class="dot" style="background:var(--l-backend)"></span>Database</a> <a class="chip" href="/terms/serverless"><span class="dot" style="background:var(--l-hosting)"></span>Serverless function</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 5: Cache miss → origin.</b> If the edge has no fresh copy, it forwards the request to the origin. On a static site the origin just reads a file. On a dynamic site a server or serverless function runs code to build the page.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in Hosting &amp; delivery</h2>
+    <p class="tp-layer">Where the files live and how they reach a visitor quickly.</p>
+    <div class="chips"><a class="chip" href="/terms/web-server"><span class="dot" style="background:var(--l-hosting)"></span>Web server / host</a> <a class="chip" href="/terms/cdn"><span class="dot" style="background:var(--l-hosting)"></span>CDN</a> <a class="chip" href="/terms/edge"><span class="dot" style="background:var(--l-hosting)"></span>Edge</a> <a class="chip" href="/terms/static-site"><span class="dot" style="background:var(--l-hosting)"></span>Static site</a> <a class="chip" href="/terms/caching"><span class="dot" style="background:var(--l-hosting)"></span>Caching</a> <a class="chip" href="/terms/serverless"><span class="dot" style="background:var(--l-hosting)"></span>Serverless function</a> <a class="chip" href="/terms/redirect"><span class="dot" style="background:var(--l-hosting)"></span>Redirect</a> <a class="chip" href="/terms/status-codes"><span class="dot" style="background:var(--l-hosting)"></span>Status codes</a></div>
+    <p class="tp-back"><a href="/#dynamic-site">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

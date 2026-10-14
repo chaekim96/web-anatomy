@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Environment variables &amp; secrets: Configuration and keys kept outside the code · Anatomy of a Website</title>
+  <meta name="description" content="Configuration and keys kept outside the code. API keys, database URLs and tokens live in the host's settings, not in the repository. Anything bundled into front-end JavaScript is public. If a key appears in the browser's network tab, anyone can use…">
+  <meta property="og:title" content="Environment variables &amp; secrets: Configuration and keys kept outside the code · Anatomy of a Website">
+  <meta property="og:description" content="Configuration and keys kept outside the code. API keys, database URLs and tokens live in the host's settings, not in the repository. Anything bundled into front-end JavaScript is public. If a key appears in the browser's network tab, anyone can use…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/environment-variables">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/environment-variables">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Environment variables & secrets",
+    "description": "Configuration and keys kept outside the code.",
+    "url": "https://webanatomy.vercel.app/terms/environment-variables",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-backend)">Backend</span></p>
+    <h1>Environment variables &amp; secrets</h1>
+    <p class="lede">Configuration and keys kept outside the code.</p>
+    <div class="tp-body" style="--c:var(--l-backend)">
+      <p>API keys, database URLs and tokens live in the host's settings, not in the repository. Anything bundled into front-end JavaScript is public. If a key appears in the browser's network tab, anyone can use it.</p>
+      <pre class="code"><code># .env (never committed)
+DATABASE_URL=postgres://…
+RESEND_API_KEY=re_…</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/serverless"><span class="dot" style="background:var(--l-hosting)"></span>Serverless function</a> <a class="chip" href="/terms/security-headers"><span class="dot" style="background:var(--l-quality)"></span>Security headers</a></div>
+    <h2>More in Backend</h2>
+    <p class="tp-layer">Code and data that run on a server instead of in the visitor's browser.</p>
+    <div class="chips"><a class="chip" href="/terms/api"><span class="dot" style="background:var(--l-backend)"></span>API</a> <a class="chip" href="/terms/database"><span class="dot" style="background:var(--l-backend)"></span>Database</a> <a class="chip" href="/terms/auth"><span class="dot" style="background:var(--l-backend)"></span>Authentication</a> <a class="chip" href="/terms/third-party"><span class="dot" style="background:var(--l-backend)"></span>Third-party services</a> <a class="chip" href="/terms/webhook"><span class="dot" style="background:var(--l-backend)"></span>Webhook</a></div>
+    <p class="tp-back"><a href="/#environment-variables">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

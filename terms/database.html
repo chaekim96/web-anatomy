@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Database: Where data that changes is stored and queried · Anatomy of a Website</title>
+  <meta name="description" content="Where data that changes is stored and queried. Relational databases (Postgres, MySQL, SQLite) store tables and are queried with SQL. Document and key-value stores (Firestore, Redis, Durable Objects) trade structure for speed or flexibility. A site needs one as soon as visitors create…">
+  <meta property="og:title" content="Database: Where data that changes is stored and queried · Anatomy of a Website">
+  <meta property="og:description" content="Where data that changes is stored and queried. Relational databases (Postgres, MySQL, SQLite) store tables and are queried with SQL. Document and key-value stores (Firestore, Redis, Durable Objects) trade structure for speed or flexibility. A site needs one as soon as visitors create…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/database">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/database">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Database",
+    "description": "Where data that changes is stored and queried.",
+    "url": "https://webanatomy.vercel.app/terms/database",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-backend)">Backend</span></p>
+    <h1>Database</h1>
+    <p class="lede">Where data that changes is stored and queried.</p>
+    <div class="tp-body" style="--c:var(--l-backend)">
+      <p>Relational databases (Postgres, MySQL, SQLite) store tables and are queried with SQL. Document and key-value stores (Firestore, Redis, Durable Objects) trade structure for speed or flexibility. A site needs one as soon as visitors create data.</p>
+      <pre class="code"><code>SELECT title, slug FROM projects WHERE published = true ORDER BY date DESC;</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/api"><span class="dot" style="background:var(--l-backend)"></span>API</a> <a class="chip" href="/terms/dynamic-site"><span class="dot" style="background:var(--l-hosting)"></span>Dynamic site</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 6: Database query.</b> Dynamic pages often need data such as a user's projects or the latest posts, so the function queries a database and puts the results into HTML or JSON. Static sites skip this step entirely.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in Backend</h2>
+    <p class="tp-layer">Code and data that run on a server instead of in the visitor's browser.</p>
+    <div class="chips"><a class="chip" href="/terms/api"><span class="dot" style="background:var(--l-backend)"></span>API</a> <a class="chip" href="/terms/auth"><span class="dot" style="background:var(--l-backend)"></span>Authentication</a> <a class="chip" href="/terms/environment-variables"><span class="dot" style="background:var(--l-backend)"></span>Environment variables &amp; secrets</a> <a class="chip" href="/terms/third-party"><span class="dot" style="background:var(--l-backend)"></span>Third-party services</a> <a class="chip" href="/terms/webhook"><span class="dot" style="background:var(--l-backend)"></span>Webhook</a></div>
+    <p class="tp-back"><a href="/#database">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

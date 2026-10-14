@@ -140,6 +140,7 @@
     const body = el("div", { class: "t-body" }, el("p", {}, t.body));
     if (t.code) body.append(el("pre", { class: "code" }, el("code", {}, t.code)));
     if (t.related?.length) body.append(el("div", { class: "rel" }, "Related:", ...t.related.filter(r => byId[r]).map(termChip)));
+    body.append(el("p", { class: "t-link" }, el("a", { href: `/terms/${t.id}` }, `Full page: ${t.term} →`)));
     const d = el("details", { class: "term", id: t.id, style: `--c:var(--l-${t.layer})` },
       el("summary", {},
         el("span", { class: "t-name" }, t.term, el("span", { class: "t-layer" }, layerOf[t.layer].name)),
@@ -153,7 +154,7 @@
     d._layer = t.layer;
     return d;
   });
-  list.append(...cards);
+  list.replaceChildren(...cards); // swaps out the server-rendered list from build.mjs
 
   filters.append(el("button", { class: "chip", type: "button", "data-f": "all", onclick: () => setFilter("all") }, "All"),
     ...LAYERS.map(l => el("button", { class: "chip", type: "button", "data-f": l.id, onclick: () => setFilter(l.id) },

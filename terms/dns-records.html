@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNS records: The entries in a domain's phone-book listing · Anatomy of a Website</title>
+  <meta name="description" content="The entries in a domain's phone-book listing. A maps a name to an IPv4 address, and AAAA to IPv6. CNAME points one name at another name. MX says where email goes. TXT holds text, often used to prove you own the domain (for Google Search Console, for…">
+  <meta property="og:title" content="DNS records: The entries in a domain's phone-book listing · Anatomy of a Website">
+  <meta property="og:description" content="The entries in a domain's phone-book listing. A maps a name to an IPv4 address, and AAAA to IPv6. CNAME points one name at another name. MX says where email goes. TXT holds text, often used to prove you own the domain (for Google Search Console, for…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/dns-records">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/dns-records">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "DNS records",
+    "description": "The entries in a domain's phone-book listing.",
+    "url": "https://webanatomy.vercel.app/terms/dns-records",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-network)">Domain &amp; network</span></p>
+    <h1>DNS records</h1>
+    <p class="lede">The entries in a domain's phone-book listing.</p>
+    <div class="tp-body" style="--c:var(--l-network)">
+      <p>A maps a name to an IPv4 address, and AAAA to IPv6. CNAME points one name at another name. MX says where email goes. TXT holds text, often used to prove you own the domain (for Google Search Console, for example).</p>
+      <pre class="code"><code>example.com.      A      76.76.21.21
+www.example.com.  CNAME  cname.vercel-dns.com.
+example.com.      TXT    &quot;google-site-verification=…&quot;</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/dns"><span class="dot" style="background:var(--l-network)"></span>DNS</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 2: DNS lookup.</b> The browser asks a DNS resolver, the internet's phone book, for example.com. The resolver follows the chain from the root servers to the domain's nameservers and returns an IP address. The answer is cached so the next visit skips this step.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in Domain &amp; network</h2>
+    <p class="tp-layer">How a name like example.com turns into a secure connection to a real machine.</p>
+    <div class="chips"><a class="chip" href="/terms/url"><span class="dot" style="background:var(--l-network)"></span>URL</a> <a class="chip" href="/terms/domain-name"><span class="dot" style="background:var(--l-network)"></span>Domain name</a> <a class="chip" href="/terms/registrar"><span class="dot" style="background:var(--l-network)"></span>Registrar</a> <a class="chip" href="/terms/dns"><span class="dot" style="background:var(--l-network)"></span>DNS</a> <a class="chip" href="/terms/ip-address"><span class="dot" style="background:var(--l-network)"></span>IP address</a> <a class="chip" href="/terms/http"><span class="dot" style="background:var(--l-network)"></span>HTTP</a> <a class="chip" href="/terms/https-tls"><span class="dot" style="background:var(--l-network)"></span>HTTPS &amp; TLS</a></div>
+    <p class="tp-back"><a href="/#dns-records">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

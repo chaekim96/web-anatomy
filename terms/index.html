@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encyclopedia: 64 web terms, explained simply · Anatomy of a Website</title>
+  <meta name="description" content="Plain-English definitions of 64 terms that make up a website, from DNS and CDNs to canonical tags, structured data and GEO.">
+  <meta property="og:title" content="Encyclopedia: 64 web terms, explained simply · Anatomy of a Website">
+  <meta property="og:description" content="Plain-English definitions of 64 terms that make up a website, from DNS and CDNs to canonical tags, structured data and GEO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": "Anatomy of a Website: Encyclopedia",
+    "url": "https://webanatomy.vercel.app/terms",
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "hasDefinedTerm": [
+      {
+        "@type": "DefinedTerm",
+        "name": "URL",
+        "url": "https://webanatomy.vercel.app/terms/url"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Domain name",
+        "url": "https://webanatomy.vercel.app/terms/domain-name"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Registrar",
+        "url": "https://webanatomy.vercel.app/terms/registrar"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "DNS",
+        "url": "https://webanatomy.vercel.app/terms/dns"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "DNS records",
+        "url": "https://webanatomy.vercel.app/terms/dns-records"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "IP address",
+        "url": "https://webanatomy.vercel.app/terms/ip-address"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "HTTP",
+        "url": "https://webanatomy.vercel.app/terms/http"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "HTTPS & TLS",
+        "url": "https://webanatomy.vercel.app/terms/https-tls"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Web server / host",
+        "url": "https://webanatomy.vercel.app/terms/web-server"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "CDN",
+        "url": "https://webanatomy.vercel.app/terms/cdn"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Edge",
+        "url": "https://webanatomy.vercel.app/terms/edge"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Static site",
+        "url": "https://webanatomy.vercel.app/terms/static-site"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Dynamic site",
+        "url": "https://webanatomy.vercel.app/terms/dynamic-site"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Caching",
+        "url": "https://webanatomy.vercel.app/terms/caching"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Serverless function",
+        "url": "https://webanatomy.vercel.app/terms/serverless"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Redirect",
+        "url": "https://webanatomy.vercel.app/terms/redirect"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Status codes",
+        "url": "https://webanatomy.vercel.app/terms/status-codes"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "API",
+        "url": "https://webanatomy.vercel.app/terms/api"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Database",
+        "url": "https://webanatomy.vercel.app/terms/database"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Authentication",
+        "url": "https://webanatomy.vercel.app/terms/auth"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Environment variables & secrets",
+        "url": "https://webanatomy.vercel.app/terms/environment-variables"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Third-party services",
+        "url": "https://webanatomy.vercel.app/terms/third-party"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Webhook",
+        "url": "https://webanatomy.vercel.app/terms/webhook"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "HTML document",
+        "url": "https://webanatomy.vercel.app/terms/html-document"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "\u003chead>",
+        "url": "https://webanatomy.vercel.app/terms/head"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Semantic HTML",
+        "url": "https://webanatomy.vercel.app/terms/semantic-html"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "DOM",
+        "url": "https://webanatomy.vercel.app/terms/dom"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "CSS",
+        "url": "https://webanatomy.vercel.app/terms/css"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Layout (Flexbox & Grid)",
+        "url": "https://webanatomy.vercel.app/terms/layout"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Responsive design",
+        "url": "https://webanatomy.vercel.app/terms/responsive"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Design tokens",
+        "url": "https://webanatomy.vercel.app/terms/design-tokens"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Web fonts",
+        "url": "https://webanatomy.vercel.app/terms/web-fonts"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "JavaScript",
+        "url": "https://webanatomy.vercel.app/terms/javascript"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Events",
+        "url": "https://webanatomy.vercel.app/terms/events"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "fetch()",
+        "url": "https://webanatomy.vercel.app/terms/fetch"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Framework",
+        "url": "https://webanatomy.vercel.app/terms/framework"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Rendering: SSG, SSR, CSR",
+        "url": "https://webanatomy.vercel.app/terms/rendering"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Images",
+        "url": "https://webanatomy.vercel.app/terms/images"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "SVG",
+        "url": "https://webanatomy.vercel.app/terms/svg"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Favicon & app icons",
+        "url": "https://webanatomy.vercel.app/terms/favicon"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Title tag",
+        "url": "https://webanatomy.vercel.app/terms/title-tag"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Meta description",
+        "url": "https://webanatomy.vercel.app/terms/meta-description"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Canonical URL",
+        "url": "https://webanatomy.vercel.app/terms/canonical"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Robots meta / noindex",
+        "url": "https://webanatomy.vercel.app/terms/robots-meta"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "robots.txt",
+        "url": "https://webanatomy.vercel.app/terms/robots-txt"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Sitemap",
+        "url": "https://webanatomy.vercel.app/terms/sitemap"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Open Graph & social cards",
+        "url": "https://webanatomy.vercel.app/terms/open-graph"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Structured data (JSON-LD)",
+        "url": "https://webanatomy.vercel.app/terms/structured-data"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Core Web Vitals",
+        "url": "https://webanatomy.vercel.app/terms/core-web-vitals"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Internal links",
+        "url": "https://webanatomy.vercel.app/terms/internal-links"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Backlinks",
+        "url": "https://webanatomy.vercel.app/terms/backlinks"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Search Console",
+        "url": "https://webanatomy.vercel.app/terms/search-console"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "GEO (generative engine optimization)",
+        "url": "https://webanatomy.vercel.app/terms/geo"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "llms.txt",
+        "url": "https://webanatomy.vercel.app/terms/llms-txt"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Performance",
+        "url": "https://webanatomy.vercel.app/terms/performance"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Accessibility (a11y)",
+        "url": "https://webanatomy.vercel.app/terms/accessibility"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Security headers",
+        "url": "https://webanatomy.vercel.app/terms/security-headers"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Analytics",
+        "url": "https://webanatomy.vercel.app/terms/analytics"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Lighthouse",
+        "url": "https://webanatomy.vercel.app/terms/lighthouse"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Git & GitHub",
+        "url": "https://webanatomy.vercel.app/terms/git"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Branch",
+        "url": "https://webanatomy.vercel.app/terms/branch"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "CI/CD",
+        "url": "https://webanatomy.vercel.app/terms/ci-cd"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Preview deploy",
+        "url": "https://webanatomy.vercel.app/terms/preview-deploy"
+      },
+      {
+        "@type": "DefinedTerm",
+        "name": "Static site generator",
+        "url": "https://webanatomy.vercel.app/terms/ssg"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="eyebrow">Encyclopedia</p>
+    <h1>64 web terms, explained simply</h1>
+    <p class="lede">Every part of a website, grouped by layer. Each term has a plain-English definition, how it works and a real snippet.</p>
+    <section class="tp-group" style="--c:var(--l-network)">
+      <h2>Domain &amp; network</h2>
+      <p class="tp-layer">How a name like example.com turns into a secure connection to a real machine.</p>
+      <dl>
+        <dt><a href="/terms/url">URL</a></dt><dd>The full address of one resource on the web.</dd>
+        <dt><a href="/terms/domain-name">Domain name</a></dt><dd>The human-readable name for a site, like example.com.</dd>
+        <dt><a href="/terms/registrar">Registrar</a></dt><dd>The company you rent a domain name from.</dd>
+        <dt><a href="/terms/dns">DNS</a></dt><dd>The internet's phone book. It turns names into IP addresses.</dd>
+        <dt><a href="/terms/dns-records">DNS records</a></dt><dd>The entries in a domain's phone-book listing.</dd>
+        <dt><a href="/terms/ip-address">IP address</a></dt><dd>The numeric address of a machine on the internet.</dd>
+        <dt><a href="/terms/http">HTTP</a></dt><dd>The request–response language browsers and servers speak.</dd>
+        <dt><a href="/terms/https-tls">HTTPS &amp; TLS</a></dt><dd>Encryption between the browser and the server. It's the padlock.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-hosting)">
+      <h2>Hosting &amp; delivery</h2>
+      <p class="tp-layer">Where the files live and how they reach a visitor quickly.</p>
+      <dl>
+        <dt><a href="/terms/web-server">Web server / host</a></dt><dd>A computer that answers HTTP requests with files or generated pages.</dd>
+        <dt><a href="/terms/cdn">CDN</a></dt><dd>Copies of your site in data centers around the world.</dd>
+        <dt><a href="/terms/edge">Edge</a></dt><dd>Servers at the outer rim of the network, nearest the visitor.</dd>
+        <dt><a href="/terms/static-site">Static site</a></dt><dd>Pages built ahead of time and served as plain files.</dd>
+        <dt><a href="/terms/dynamic-site">Dynamic site</a></dt><dd>Pages assembled on request, often from a database.</dd>
+        <dt><a href="/terms/caching">Caching</a></dt><dd>Reusing a saved copy instead of fetching or rebuilding it.</dd>
+        <dt><a href="/terms/serverless">Serverless function</a></dt><dd>Server code that runs only when a request arrives.</dd>
+        <dt><a href="/terms/redirect">Redirect</a></dt><dd>Sending a request from one URL to another.</dd>
+        <dt><a href="/terms/status-codes">Status codes</a></dt><dd>Three-digit codes that say how a request went.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-backend)">
+      <h2>Backend</h2>
+      <p class="tp-layer">Code and data that run on a server instead of in the visitor's browser.</p>
+      <dl>
+        <dt><a href="/terms/api">API</a></dt><dd>A defined way for one program to ask another for data or actions.</dd>
+        <dt><a href="/terms/database">Database</a></dt><dd>Where data that changes is stored and queried.</dd>
+        <dt><a href="/terms/auth">Authentication</a></dt><dd>Proving who a visitor is, and remembering it.</dd>
+        <dt><a href="/terms/environment-variables">Environment variables &amp; secrets</a></dt><dd>Configuration and keys kept outside the code.</dd>
+        <dt><a href="/terms/third-party">Third-party services</a></dt><dd>Outside services you plug in instead of building.</dd>
+        <dt><a href="/terms/webhook">Webhook</a></dt><dd>A service calling your URL when something happens.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-html)">
+      <h2>HTML</h2>
+      <p class="tp-layer">The document itself: what each piece of content is.</p>
+      <dl>
+        <dt><a href="/terms/html-document">HTML document</a></dt><dd>The text file that is the page.</dd>
+        <dt><a href="/terms/head">&lt;head&gt;</a></dt><dd>The invisible part of the page that machines read first.</dd>
+        <dt><a href="/terms/semantic-html">Semantic HTML</a></dt><dd>Using tags that say what content is, not only how it looks.</dd>
+        <dt><a href="/terms/dom">DOM</a></dt><dd>The live tree the browser builds from HTML.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-css)">
+      <h2>CSS</h2>
+      <p class="tp-layer">How the document looks at every screen size.</p>
+      <dl>
+        <dt><a href="/terms/css">CSS</a></dt><dd>The rules that decide how the page looks.</dd>
+        <dt><a href="/terms/layout">Layout (Flexbox &amp; Grid)</a></dt><dd>How boxes are arranged on the page.</dd>
+        <dt><a href="/terms/responsive">Responsive design</a></dt><dd>One page that adapts to every screen.</dd>
+        <dt><a href="/terms/design-tokens">Design tokens</a></dt><dd>Named values for color, spacing and type, defined once.</dd>
+        <dt><a href="/terms/web-fonts">Web fonts</a></dt><dd>Custom typefaces downloaded with the page.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-js)">
+      <h2>JavaScript</h2>
+      <p class="tp-layer">What happens when someone clicks, types or scrolls.</p>
+      <dl>
+        <dt><a href="/terms/javascript">JavaScript</a></dt><dd>The programming language of the browser.</dd>
+        <dt><a href="/terms/events">Events</a></dt><dd>Signals like click, input, scroll and keydown.</dd>
+        <dt><a href="/terms/fetch">fetch()</a></dt><dd>How browser JavaScript makes HTTP requests.</dd>
+        <dt><a href="/terms/framework">Framework</a></dt><dd>A toolkit for building large interactive interfaces.</dd>
+        <dt><a href="/terms/rendering">Rendering: SSG, SSR, CSR</a></dt><dd>Where and when the HTML gets built.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-assets)">
+      <h2>Assets</h2>
+      <p class="tp-layer">Images, fonts, icons and files the page pulls in.</p>
+      <dl>
+        <dt><a href="/terms/images">Images</a></dt><dd>Usually the heaviest part of a page.</dd>
+        <dt><a href="/terms/svg">SVG</a></dt><dd>Images described as shapes, so they stay sharp at any size.</dd>
+        <dt><a href="/terms/favicon">Favicon &amp; app icons</a></dt><dd>The small icon in tabs, bookmarks and search results.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-seo)">
+      <h2>SEO &amp; GEO</h2>
+      <p class="tp-layer">How search engines and AI systems find, read and describe the site.</p>
+      <dl>
+        <dt><a href="/terms/title-tag">Title tag</a></dt><dd>The clickable headline in search results and the browser tab.</dd>
+        <dt><a href="/terms/meta-description">Meta description</a></dt><dd>The gray summary under the result link.</dd>
+        <dt><a href="/terms/canonical">Canonical URL</a></dt><dd>The one official address for a page.</dd>
+        <dt><a href="/terms/robots-meta">Robots meta / noindex</a></dt><dd>A per-page instruction to keep a page out of search results.</dd>
+        <dt><a href="/terms/robots-txt">robots.txt</a></dt><dd>A file at the site root that tells crawlers where not to go.</dd>
+        <dt><a href="/terms/sitemap">Sitemap</a></dt><dd>A list of every URL you want found.</dd>
+        <dt><a href="/terms/open-graph">Open Graph &amp; social cards</a></dt><dd>Tags that control the preview when a link is shared.</dd>
+        <dt><a href="/terms/structured-data">Structured data (JSON-LD)</a></dt><dd>Machine-readable facts about the page, in schema.org vocabulary.</dd>
+        <dt><a href="/terms/core-web-vitals">Core Web Vitals</a></dt><dd>Google's three measures of how a page feels to use.</dd>
+        <dt><a href="/terms/internal-links">Internal links</a></dt><dd>Links between pages on your own site.</dd>
+        <dt><a href="/terms/backlinks">Backlinks</a></dt><dd>Links to your site from other sites.</dd>
+        <dt><a href="/terms/search-console">Search Console</a></dt><dd>Google's dashboard for how it sees your site.</dd>
+        <dt><a href="/terms/geo">GEO (generative engine optimization)</a></dt><dd>Being found, understood and cited by AI assistants.</dd>
+        <dt><a href="/terms/llms-txt">llms.txt</a></dt><dd>A proposed Markdown summary of a site, written for language models.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-quality)">
+      <h2>Quality</h2>
+      <p class="tp-layer">Speed, accessibility, security and measurement, which every other layer depends on.</p>
+      <dl>
+        <dt><a href="/terms/performance">Performance</a></dt><dd>How fast the page loads and responds, especially on a phone.</dd>
+        <dt><a href="/terms/accessibility">Accessibility (a11y)</a></dt><dd>Making the site usable by everyone, including people using assistive technology.</dd>
+        <dt><a href="/terms/security-headers">Security headers</a></dt><dd>Response headers that tell the browser to lock things down.</dd>
+        <dt><a href="/terms/analytics">Analytics</a></dt><dd>Measuring who visits and what they do.</dd>
+        <dt><a href="/terms/lighthouse">Lighthouse</a></dt><dd>Chrome's built-in audit for performance, accessibility, best practices and SEO.</dd>
+      </dl>
+    </section>
+    <section class="tp-group" style="--c:var(--l-workflow)">
+      <h2>Workflow</h2>
+      <p class="tp-layer">How changes get from a laptop to the live site safely.</p>
+      <dl>
+        <dt><a href="/terms/git">Git &amp; GitHub</a></dt><dd>Version history for code, and a place to host it.</dd>
+        <dt><a href="/terms/branch">Branch</a></dt><dd>A parallel line of work.</dd>
+        <dt><a href="/terms/ci-cd">CI/CD</a></dt><dd>Automatic checks and deploys on every push.</dd>
+        <dt><a href="/terms/preview-deploy">Preview deploy</a></dt><dd>A private, temporary copy of the site for each branch.</dd>
+        <dt><a href="/terms/ssg">Static site generator</a></dt><dd>A tool that turns content and templates into HTML files.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

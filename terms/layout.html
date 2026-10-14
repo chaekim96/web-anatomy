@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout (Flexbox &amp; Grid): How boxes are arranged on the page · Anatomy of a Website</title>
+  <meta name="description" content="How boxes are arranged on the page. Flexbox handles one direction: a row of nav links or a column of cards. Grid handles two: page structure and card galleries. Between them, nearly any layout works without…">
+  <meta property="og:title" content="Layout (Flexbox &amp; Grid): How boxes are arranged on the page · Anatomy of a Website">
+  <meta property="og:description" content="How boxes are arranged on the page. Flexbox handles one direction: a row of nav links or a column of cards. Grid handles two: page structure and card galleries. Between them, nearly any layout works without…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/layout">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/layout">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Layout (Flexbox & Grid)",
+    "description": "How boxes are arranged on the page.",
+    "url": "https://webanatomy.vercel.app/terms/layout",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-css)">CSS</span></p>
+    <h1>Layout (Flexbox &amp; Grid)</h1>
+    <p class="lede">How boxes are arranged on the page.</p>
+    <div class="tp-body" style="--c:var(--l-css)">
+      <p>Flexbox handles one direction: a row of nav links or a column of cards. Grid handles two: page structure and card galleries. Between them, nearly any layout works without hacks.</p>
+      <pre class="code"><code>.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/css"><span class="dot" style="background:var(--l-css)"></span>CSS</a> <a class="chip" href="/terms/responsive"><span class="dot" style="background:var(--l-css)"></span>Responsive design</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 9: Style, layout, paint.</b> CSS is applied to the DOM. The browser works out where every box goes (layout) and draws the pixels (paint). The moment the largest piece of content appears is called LCP, and it's one of Google's Core Web Vitals.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in CSS</h2>
+    <p class="tp-layer">How the document looks at every screen size.</p>
+    <div class="chips"><a class="chip" href="/terms/css"><span class="dot" style="background:var(--l-css)"></span>CSS</a> <a class="chip" href="/terms/responsive"><span class="dot" style="background:var(--l-css)"></span>Responsive design</a> <a class="chip" href="/terms/design-tokens"><span class="dot" style="background:var(--l-css)"></span>Design tokens</a> <a class="chip" href="/terms/web-fonts"><span class="dot" style="background:var(--l-css)"></span>Web fonts</a></div>
+    <p class="tp-back"><a href="/#layout">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

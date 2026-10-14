@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design tokens: Named values for color, spacing and type, defined once · Anatomy of a Website</title>
+  <meta name="description" content="Named values for color, spacing and type, defined once. Custom properties like --accent and --space-2 keep a site consistent and make themes possible. Dark mode becomes a matter of redefining the tokens under prefers-color-scheme:…">
+  <meta property="og:title" content="Design tokens: Named values for color, spacing and type, defined once · Anatomy of a Website">
+  <meta property="og:description" content="Named values for color, spacing and type, defined once. Custom properties like --accent and --space-2 keep a site consistent and make themes possible. Dark mode becomes a matter of redefining the tokens under prefers-color-scheme:…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/design-tokens">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/design-tokens">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Design tokens",
+    "description": "Named values for color, spacing and type, defined once.",
+    "url": "https://webanatomy.vercel.app/terms/design-tokens",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-css)">CSS</span></p>
+    <h1>Design tokens</h1>
+    <p class="lede">Named values for color, spacing and type, defined once.</p>
+    <div class="tp-body" style="--c:var(--l-css)">
+      <p>Custom properties like --accent and --space-2 keep a site consistent and make themes possible. Dark mode becomes a matter of redefining the tokens under prefers-color-scheme: dark.</p>
+      <pre class="code"><code>:root { --ink: #111; --paper: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #eee; --paper: #111; }
+}</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/css"><span class="dot" style="background:var(--l-css)"></span>CSS</a></div>
+    <h2>More in CSS</h2>
+    <p class="tp-layer">How the document looks at every screen size.</p>
+    <div class="chips"><a class="chip" href="/terms/css"><span class="dot" style="background:var(--l-css)"></span>CSS</a> <a class="chip" href="/terms/layout"><span class="dot" style="background:var(--l-css)"></span>Layout (Flexbox &amp; Grid)</a> <a class="chip" href="/terms/responsive"><span class="dot" style="background:var(--l-css)"></span>Responsive design</a> <a class="chip" href="/terms/web-fonts"><span class="dot" style="background:var(--l-css)"></span>Web fonts</a></div>
+    <p class="tp-back"><a href="/#design-tokens">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caching: Reusing a saved copy instead of fetching or rebuilding it · Anatomy of a Website</title>
+  <meta name="description" content="Reusing a saved copy instead of fetching or rebuilding it. The Cache-Control header tells browsers and CDNs how long they may reuse a response. Fingerprinted assets (style.3f9a.css) can be cached forever, because a new version gets a new name. HTML usually revalidates on every visit so updates show…">
+  <meta property="og:title" content="Caching: Reusing a saved copy instead of fetching or rebuilding it · Anatomy of a Website">
+  <meta property="og:description" content="Reusing a saved copy instead of fetching or rebuilding it. The Cache-Control header tells browsers and CDNs how long they may reuse a response. Fingerprinted assets (style.3f9a.css) can be cached forever, because a new version gets a new name. HTML usually revalidates on every visit so updates show…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/caching">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/caching">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Caching",
+    "description": "Reusing a saved copy instead of fetching or rebuilding it.",
+    "url": "https://webanatomy.vercel.app/terms/caching",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-hosting)">Hosting &amp; delivery</span></p>
+    <h1>Caching</h1>
+    <p class="lede">Reusing a saved copy instead of fetching or rebuilding it.</p>
+    <div class="tp-body" style="--c:var(--l-hosting)">
+      <p>The Cache-Control header tells browsers and CDNs how long they may reuse a response. Fingerprinted assets (style.3f9a.css) can be cached forever, because a new version gets a new name. HTML usually revalidates on every visit so updates show up right away.</p>
+      <pre class="code"><code>Cache-Control: public, max-age=31536000, immutable   # hashed assets
+Cache-Control: public, max-age=0, must-revalidate     # HTML</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/cdn"><span class="dot" style="background:var(--l-hosting)"></span>CDN</a> <a class="chip" href="/terms/http"><span class="dot" style="background:var(--l-network)"></span>HTTP</a> <a class="chip" href="/terms/performance"><span class="dot" style="background:var(--l-quality)"></span>Performance</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 4: HTTP request.</b> The browser sends GET /work with headers: which languages it accepts, which compression it understands and any cookies. The edge checks its cache.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in Hosting &amp; delivery</h2>
+    <p class="tp-layer">Where the files live and how they reach a visitor quickly.</p>
+    <div class="chips"><a class="chip" href="/terms/web-server"><span class="dot" style="background:var(--l-hosting)"></span>Web server / host</a> <a class="chip" href="/terms/cdn"><span class="dot" style="background:var(--l-hosting)"></span>CDN</a> <a class="chip" href="/terms/edge"><span class="dot" style="background:var(--l-hosting)"></span>Edge</a> <a class="chip" href="/terms/static-site"><span class="dot" style="background:var(--l-hosting)"></span>Static site</a> <a class="chip" href="/terms/dynamic-site"><span class="dot" style="background:var(--l-hosting)"></span>Dynamic site</a> <a class="chip" href="/terms/serverless"><span class="dot" style="background:var(--l-hosting)"></span>Serverless function</a> <a class="chip" href="/terms/redirect"><span class="dot" style="background:var(--l-hosting)"></span>Redirect</a> <a class="chip" href="/terms/status-codes"><span class="dot" style="background:var(--l-hosting)"></span>Status codes</a></div>
+    <p class="tp-back"><a href="/#caching">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive design: One page that adapts to every screen · Anatomy of a Website</title>
+  <meta name="description" content="One page that adapts to every screen. Start from the phone and add media queries as screens get wider. Fluid units (%, rem, clamp()) and the viewport meta tag do most of the work. Google indexes the mobile version first, so the phone layout is the one that counts most for…">
+  <meta property="og:title" content="Responsive design: One page that adapts to every screen · Anatomy of a Website">
+  <meta property="og:description" content="One page that adapts to every screen. Start from the phone and add media queries as screens get wider. Fluid units (%, rem, clamp()) and the viewport meta tag do most of the work. Google indexes the mobile version first, so the phone layout is the one that counts most for…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/responsive">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/responsive">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Responsive design",
+    "description": "One page that adapts to every screen.",
+    "url": "https://webanatomy.vercel.app/terms/responsive",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-css)">CSS</span></p>
+    <h1>Responsive design</h1>
+    <p class="lede">One page that adapts to every screen.</p>
+    <div class="tp-body" style="--c:var(--l-css)">
+      <p>Start from the phone and add media queries as screens get wider. Fluid units (%, rem, clamp()) and the viewport meta tag do most of the work. Google indexes the mobile version first, so the phone layout is the one that counts most for search.</p>
+      <pre class="code"><code>@media (min-width: 768px) {
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/layout"><span class="dot" style="background:var(--l-css)"></span>Layout (Flexbox &amp; Grid)</a> <a class="chip" href="/terms/core-web-vitals"><span class="dot" style="background:var(--l-seo)"></span>Core Web Vitals</a></div>
+    <h2>More in CSS</h2>
+    <p class="tp-layer">How the document looks at every screen size.</p>
+    <div class="chips"><a class="chip" href="/terms/css"><span class="dot" style="background:var(--l-css)"></span>CSS</a> <a class="chip" href="/terms/layout"><span class="dot" style="background:var(--l-css)"></span>Layout (Flexbox &amp; Grid)</a> <a class="chip" href="/terms/design-tokens"><span class="dot" style="background:var(--l-css)"></span>Design tokens</a> <a class="chip" href="/terms/web-fonts"><span class="dot" style="background:var(--l-css)"></span>Web fonts</a></div>
+    <p class="tp-back"><a href="/#responsive">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>

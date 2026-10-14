@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML document: The text file that is the page · Anatomy of a Website</title>
+  <meta name="description" content="The text file that is the page. Every page is a tree that starts with &lt;!doctype html&gt;, then &lt;html lang&gt; containing a &lt;head&gt; (information about the page) and a &lt;body&gt; (the page itself). It's the only layer a page can't do without. CSS and JavaScript are optional…">
+  <meta property="og:title" content="HTML document: The text file that is the page · Anatomy of a Website">
+  <meta property="og:description" content="The text file that is the page. Every page is a tree that starts with &lt;!doctype html&gt;, then &lt;html lang&gt; containing a &lt;head&gt; (information about the page) and a &lt;body&gt; (the page itself). It's the only layer a page can't do without. CSS and JavaScript are optional…">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://webanatomy.vercel.app/terms/html-document">
+  <link rel="canonical" href="https://webanatomy.vercel.app/terms/html-document">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "HTML document",
+    "description": "The text file that is the page.",
+    "url": "https://webanatomy.vercel.app/terms/html-document",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Anatomy of a Website: Encyclopedia",
+      "url": "https://webanatomy.vercel.app/terms"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chae Kim",
+      "url": "https://chaekim-portfolio.vercel.app/"
+    },
+    "dateModified": "2026-10-14"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Sections">
+      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <div class="nav-links">
+        <a href="/#journey">Journey</a>
+        <a href="/#layers">Layers</a>
+        <a href="/terms">All terms</a>
+        <a href="/basics">Simple version</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap tp">
+    <p class="tp-crumb"><a href="/terms">Encyclopedia</a> / <span style="color:var(--l-html)">HTML</span></p>
+    <h1>HTML document</h1>
+    <p class="lede">The text file that is the page.</p>
+    <div class="tp-body" style="--c:var(--l-html)">
+      <p>Every page is a tree that starts with &lt;!doctype html&gt;, then &lt;html lang&gt; containing a &lt;head&gt; (information about the page) and a &lt;body&gt; (the page itself). It's the only layer a page can't do without. CSS and JavaScript are optional extras.</p>
+      <pre class="code"><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;…&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <h2>Related terms</h2>
+    <div class="chips"><a class="chip" href="/terms/head"><span class="dot" style="background:var(--l-html)"></span>&lt;head&gt;</a> <a class="chip" href="/terms/semantic-html"><span class="dot" style="background:var(--l-html)"></span>Semantic HTML</a> <a class="chip" href="/terms/dom"><span class="dot" style="background:var(--l-html)"></span>DOM</a></div>
+    <h2>Where it shows up in a page load</h2>
+    <ol class="tp-steps">
+      <li><b>Step 8: Parse HTML → DOM.</b> The browser reads the HTML from top to bottom and builds the DOM, a tree of every element. Along the way it finds the CSS, JavaScript, fonts and images and requests them. Many of those requests run in parallel.</li>
+    </ol>
+    <p><a href="/#journey">Watch the full request journey →</a></p>
+    <h2>More in HTML</h2>
+    <p class="tp-layer">The document itself: what each piece of content is.</p>
+    <div class="chips"><a class="chip" href="/terms/head"><span class="dot" style="background:var(--l-html)"></span>&lt;head&gt;</a> <a class="chip" href="/terms/semantic-html"><span class="dot" style="background:var(--l-html)"></span>Semantic HTML</a> <a class="chip" href="/terms/dom"><span class="dot" style="background:var(--l-html)"></span>DOM</a></div>
+    <p class="tp-back"><a href="/#html-document">Open in the interactive encyclopedia →</a></p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+  </footer>
+</body>
+</html>
