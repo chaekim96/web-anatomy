@@ -25,13 +25,13 @@ python3 -m http.server 8000
 
 ## Build
 
-The site has no build step to *run* it, but the static parts come from `data.js`. After editing it:
+The site has no build step to *run* it, but some parts are generated. After editing any page, `data.js`, `app.js` or `style.css`:
 
 ```
 node scripts/build.mjs
 ```
 
-This regenerates `terms/<id>.html` (one page per term), `terms/index.html`, the server-rendered term list inside `index.html` (so crawlers and no-JS visitors get every definition), and `sitemap.xml`. Term `lastmod` dates only change when that term's content changes (tracked in `scripts/lastmod.json`). Commit everything it writes.
+This regenerates `terms/<id>.html` (one page per term), `terms/index.html`, the server-rendered term list and term count inside `index.html` (so crawlers and no-JS visitors get every definition), and `sitemap.xml`. It also stamps every link to `style.css`, `app.js` and `data.js` with a content fingerprint (`style.css?v=…`). `vercel.json` caches those three files for a year, so a changed file must get a new URL. Sitemap `lastmod` dates only change when a page's content changes, not its styling (tracked in `scripts/lastmod.json`). Commit everything it writes.
 
 ## Add an entry
 
