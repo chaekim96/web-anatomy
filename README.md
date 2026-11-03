@@ -33,6 +33,8 @@ node scripts/build.mjs
 
 This regenerates `terms/<id>.html` (one page per term), `terms/index.html`, the server-rendered term list and term count inside `index.html` (so crawlers and no-JS visitors get every definition), and `sitemap.xml`. It also stamps every link to `style.css`, `app.js` and `data.js` with a content fingerprint (`style.css?v=…`). `vercel.json` caches those three files for a year, so a changed file must get a new URL. Sitemap `lastmod` dates only change when a page's content changes, not its styling (tracked in `scripts/lastmod.json`). Commit everything it writes.
 
+A `pre-push` hook in `.githooks/` runs the build and blocks the push if it changed anything, so a stale fingerprint can't ship. In a fresh clone, enable it once with `git config core.hooksPath .githooks`.
+
 ## Add an entry
 
 All content lives in [`data.js`](data.js). Add an object to `TERMS`:
