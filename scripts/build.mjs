@@ -67,7 +67,7 @@ for (const t of TERMS) {
 }
 
 /* ── shared chrome ───────────────────────────────────── */
-const head = ({ title, desc, url, type = "article", ld }) => `<!doctype html>
+const head = ({ title, desc, url, type = "article", ld, image = `${SITE}/og.png`, imageAlt = "Anatomy of a Website: how a website works, from the DNS lookup to the AI answer." }) => `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -78,10 +78,10 @@ const head = ({ title, desc, url, type = "article", ld }) => `<!doctype html>
   <meta property="og:description" content="${esc(desc)}">
   <meta property="og:type" content="${type}">
   <meta property="og:url" content="${url}">
-  <meta property="og:image" content="${SITE}/og.png">
+  <meta property="og:image" content="${image}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Anatomy of a Website: how a website works, from the DNS lookup to the AI answer.">
+  <meta property="og:image:alt" content="${esc(imageAlt)}">
   <link rel="canonical" href="${url}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
@@ -132,6 +132,8 @@ for (const t of TERMS) {
     title: `${t.term}: ${t.short.replace(/\.$/, "")} · Anatomy of a Website`,
     desc: `${t.short} ${t.body}`.slice(0, 300).replace(/\s+\S*$/, "") + "…",
     url,
+    // each term's own share card from scripts/build-cards.mjs; the site card until one is rendered
+    ...(existsSync(p(`og/${t.id}.png`)) && { image: `${SITE}/og/${t.id}.png`, imageAlt: `${t.term}: ${t.short} Anatomy of a Website, by Chae Kim.` }),
     ld: {
       "@context": "https://schema.org", "@type": "DefinedTerm",
       "name": t.term, "description": t.short, "url": url,
