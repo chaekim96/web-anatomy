@@ -1,4 +1,11 @@
-# Anatomy of a Website
+<a href="https://webanatomy.vercel.app">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="brand/readme/header-dark.png">
+  <img src="brand/readme/header-light.png" alt="Anatomy of a Website: Showing how a website works, from the DNS lookup to the AI answer.">
+</picture>
+</a>
+
+**[Try it live →](https://webanatomy.vercel.app)**
 
 **Live:** https://webanatomy.vercel.app
 
@@ -46,3 +53,7 @@ All content lives in [`data.js`](data.js). Add an object to `TERMS`:
 ```
 
 Then run `node scripts/build.mjs`.
+
+---
+
+<p align="center"><a href="https://chaekim.vercel.app"><img src="brand/readme/seal.svg" width="10" height="10" alt=""> <sub>a Chae Kim build</sub></a></p>
