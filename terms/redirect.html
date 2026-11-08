@@ -15,11 +15,12 @@
   <meta property="og:image:alt" content="Redirect: Sending a request from one URL to another. Anatomy of a Website, by Chae Kim.">
   <link rel="canonical" href="https://webanatomy.vercel.app/terms/redirect">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#74bff0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a2e" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/style.css?v=3a9019b58e">
+  <link rel="preload" href="/fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=4104844ea3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +36,7 @@
     "author": {
       "@type": "Person",
       "name": "Chae Kim",
-      "url": "https://chaekim-portfolio.vercel.app/"
+      "url": "https://chaekim.vercel.app/"
     },
     "dateModified": "2026-10-14"
   }
@@ -46,7 +47,7 @@
 
   <header class="top">
     <nav class="wrap nav" aria-label="Sections">
-      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Anatomy<span>of a website</span></a>
       <div class="nav-links">
         <a href="/#journey">Journey</a>
         <a href="/#layers">Layers</a>
@@ -73,7 +74,11 @@
   </main>
 
   <footer class="wrap foot">
-    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+    <div class="foot-in">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Anatomy<span>of a website</span></a>
+      <nav class="foot-links" aria-label="Footer"><a href="/terms">All terms</a><a href="/basics">Simple version</a><a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a></nav>
+      <a class="byline" href="https://chaekim.vercel.app/projects/web-anatomy">a Chae Kim build</a>
+    </div>
   </footer>
 </body>
 </html>

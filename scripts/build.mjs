@@ -84,10 +84,11 @@ const head = ({ title, desc, url, type = "article", ld, image = `${SITE}/og.png`
   <meta property="og:image:alt" content="${esc(imageAlt)}">
   <link rel="canonical" href="${url}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#74bff0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a2e" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css?v=${V["style.css"]}">
   <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2).replace(/</g, "\\u003c").replace(/^/gm, "  ")}
@@ -98,7 +99,7 @@ ${JSON.stringify(ld, null, 2).replace(/</g, "\\u003c").replace(/^/gm, "  ")}
 
   <header class="top">
     <nav class="wrap nav" aria-label="Sections">
-      <a class="brand" href="/">Anatomy<span>of a website</span></a>
+      <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Anatomy<span>of a website</span></a>
       <div class="nav-links">
         <a href="/#journey">Journey</a>
         <a href="/#layers">Layers</a>
@@ -110,12 +111,16 @@ ${JSON.stringify(ld, null, 2).replace(/</g, "\\u003c").replace(/^/gm, "  ")}
 `;
 const foot = `
   <footer class="wrap foot">
-    <p>Anatomy of a Website, an open, growing encyclopedia by <a href="https://chaekim-portfolio.vercel.app/">Chae Kim</a>. <a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a>.</p>
+    <div class="foot-in">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="" width="28" height="28">Anatomy<span>of a website</span></a>
+      <nav class="foot-links" aria-label="Footer"><a href="/terms">All terms</a><a href="/basics">Simple version</a><a href="https://github.com/chaekim96/web-anatomy">Source on GitHub</a></nav>
+      <a class="byline" href="https://chaekim.vercel.app/projects/web-anatomy">a Chae Kim build</a>
+    </div>
   </footer>
 </body>
 </html>
 `;
-const AUTHOR = { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim-portfolio.vercel.app/" };
+const AUTHOR = { "@type": "Person", "name": "Chae Kim", "url": "https://chaekim.vercel.app/" };
 const SET = { "@type": "DefinedTermSet", "name": "Anatomy of a Website: Encyclopedia", "url": `${SITE}/terms` };
 const chip = id => `<a class="chip" href="/terms/${id}"><span class="dot" style="background:var(--l-${byId[id].layer})"></span>${esc(byId[id].term)}</a>`;
 
